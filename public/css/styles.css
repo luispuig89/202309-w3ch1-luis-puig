@@ -94,3 +94,7 @@ body {
   right: 5px;
   top: 5px;
 }
+.container {
+  display: flex;
+  justify-content: space-between;
+}

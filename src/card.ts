@@ -10,7 +10,7 @@ export function renderCard(
   characters.forEach((item) => {
     list +=
       '<ul class="characters-list row list-unstyled"><li class="character col"><div class="card character__card">';
-    list += `<img src="img/${item.name}.jpg" alt="Nombre y familia del personaje" class="character__picture card-img-top" />`;
+    list += `<img src="${item.name}.jpg" alt="Nombre y familia del personaje" class="character__picture card-img-top" />`;
     list += `<div class="card-body">`;
     list += `<h2 class="character__name card-title h4">${item.name} ${item.family}</h2>`;
     list += `<div class="character__info"><ul class="list-unstyled">`;
