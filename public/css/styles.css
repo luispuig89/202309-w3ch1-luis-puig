@@ -22,7 +22,7 @@ body {
   height: 200px;
 }
 .character__card {
-  position: relative;
+  position: absolute;
   border: none;
   background-color: #331c0e;
   color: #fff;
