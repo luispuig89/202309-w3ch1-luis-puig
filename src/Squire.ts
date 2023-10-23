@@ -9,9 +9,9 @@ export class Squire extends Character {
     name: string,
     family: string,
     age: number,
-    dead: boolean = false,
     serves: Fighter,
-    servility: number
+    servility: number,
+    dead: boolean = false
   ) {
     super(name, family, age, dead);
     this.serves = serves;

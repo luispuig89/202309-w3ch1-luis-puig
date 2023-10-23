@@ -7,8 +7,8 @@ export class Adviser extends Character {
     name: string,
     family: string,
     age: number,
-    dead: boolean = false,
-    adviserTo: string
+    adviserTo: string,
+    dead: boolean = false
   ) {
     super(name, family, age, dead);
     this.adviserTo = adviserTo;

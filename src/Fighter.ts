@@ -8,9 +8,9 @@ export class Fighter extends Character {
     name: string,
     family: string,
     age: number,
-    dead: boolean = false,
     weapon: string,
-    dexterity: number
+    dexterity: number,
+    dead: boolean = false
   ) {
     super(name, family, age, dead);
     this.weapon = weapon;

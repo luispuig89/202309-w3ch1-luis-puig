@@ -7,8 +7,8 @@ export class King extends Character {
     name: string,
     family: string,
     age: number,
-    dead: boolean = false,
-    years: number
+    years: number,
+    dead: boolean = false
   ) {
     super(name, family, age, dead);
     this.years = years;
