@@ -1,13 +1,13 @@
 import { Character } from './Character';
 
 export class Adviser extends Character {
-  adviserTo: string;
+  adviserTo: Character;
   // eslint-disable-next-line max-params
   constructor(
     name: string,
     family: string,
     age: number,
-    adviserTo: string,
+    adviserTo: Character,
     dead: boolean = false
   ) {
     super(name, family, age, dead);
