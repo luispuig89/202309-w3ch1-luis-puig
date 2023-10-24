@@ -1,5 +1,5 @@
-import { Component } from './Component';
 import { Card, Category } from './Card';
+import { Component } from './Component';
 
 export class List extends Component {
   characters: Category[];
