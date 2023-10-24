@@ -1,4 +1,4 @@
-import { Adviser } from './Adviser';
+/* Import { Adviser } from './Adviser';
 import { Character } from './Character';
 import { Fighter } from './Fighter';
 import { King } from './King';
@@ -14,7 +14,7 @@ export function renderCard(characters: Character[]) {
     list += `<div class="character__info"><ul class="list-unstyled">`;
     list += `<li>Edad: ${item.age} años</li>`;
 
-    if (item.dead) {
+    if (item.isDead) {
       list += `<li>Estado: <i class="fas fa-thumbs-down"></i></li>`;
     } else {
       list += `<li>Estado: <i class="fas fa-thumbs-up"></i></li>`;
@@ -23,7 +23,7 @@ export function renderCard(characters: Character[]) {
     list += `</ul></div>`;
     list += `<div class="character__overlay"><ul class="list-unstyled">`;
     if (item instanceof King) {
-      list += `<li>Años de reinado: ${item.years}</li>`;
+      list += `<li>Años de reinado: ${item.reignYears}</li>`;
     }
 
     if (item instanceof Adviser) {
@@ -61,3 +61,4 @@ export function renderCard(characters: Character[]) {
   list += `</ul>`;
   return list;
 }
+ */

@@ -1,4 +1,4 @@
-import { Adviser } from './Adviser';
+/* Import { Adviser } from './Adviser';
 import { Category } from './Card';
 import { Component } from './Component';
 import { Fighter } from './Fighter';
@@ -40,3 +40,4 @@ export class ExtraData extends Component {
     return result;
   }
 }
+ */

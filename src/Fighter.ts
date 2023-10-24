@@ -9,10 +9,9 @@ export class Fighter extends Character {
     family: string,
     age: number,
     weapon: string,
-    dexterity: number,
-    dead: boolean = false
+    dexterity: number
   ) {
-    super(name, family, age, dead);
+    super(name, family, age);
     this.weapon = weapon;
     this.dexterity = dexterity;
   }
