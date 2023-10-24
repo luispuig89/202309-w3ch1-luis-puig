@@ -22,7 +22,7 @@ body {
   height: 200px;
 }
 .character__card {
-  position: absolute;
+  position: relative;
   border: none;
   background-color: #331c0e;
   color: #fff;
@@ -93,8 +93,4 @@ body {
   position: absolute;
   right: 5px;
   top: 5px;
-}
-.container {
-  display: flex;
-  justify-content: space-between;
 }
