@@ -80,7 +80,7 @@ export class Card extends Component {
         (item) => `
     <li class="character col">
     <div class="card character__card">
-      <img src="/${item.name.toLowerCase()}.jpg" alt="${item.name} ${
+      <img src="/${item.name}.jpg" alt="${item.name} ${
           item.family
         }" class="character__picture card-img-top" />
       <div class="card-body">
