@@ -3,8 +3,7 @@ import { Component } from './Component';
 import { Fighter } from './Fighter';
 import { King } from './King';
 import { Squire } from './Squire';
-
-export type Category = King | Fighter | Adviser | Squire;
+import { Category } from './characters';
 
 export class Card extends Component {
   characters: Category[];

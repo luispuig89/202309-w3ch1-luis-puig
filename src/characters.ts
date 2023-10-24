@@ -3,6 +3,8 @@ import { Fighter } from './Fighter';
 import { King } from './King';
 import { Squire } from './Squire';
 
+export type Category = King | Fighter | Adviser | Squire;
+
 const joffrey = new King('Joffrey', 'Baratheon', 19, 4);
 const jaime = new Fighter('Jaime', 'Lannister', 42, 'Sword', 10);
 const daenerys = new Fighter('Daenerys', 'Targaryen', 24, 'Dragons', 10);
