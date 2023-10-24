@@ -1,6 +1,6 @@
-import { Category } from './Card';
 import { Card } from './Card';
 import { Component } from './Component';
+import { Category } from './characters';
 
 export class List extends Component {
   characters: Category[];
