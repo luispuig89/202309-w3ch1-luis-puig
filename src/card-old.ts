@@ -61,4 +61,4 @@ export function renderCard(characters: Character[]) {
   list += `</ul>`;
   return list;
 }
- */
+  */

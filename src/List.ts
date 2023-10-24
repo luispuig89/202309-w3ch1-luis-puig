@@ -1,4 +1,5 @@
-import { Card, Category } from './Card';
+import { Category } from './Card';
+import { Card } from './Card';
 import { Component } from './Component';
 
 export class List extends Component {
