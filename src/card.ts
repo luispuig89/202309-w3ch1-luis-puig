@@ -1,15 +1,13 @@
 import { Adviser } from './Adviser';
+import { Character } from './Character';
 import { Fighter } from './Fighter';
 import { King } from './King';
 import { Squire } from './Squire';
 let list = '';
-export function renderCard(
-  parentElement: HTMLElement,
-  characters: (King | Fighter | Adviser | Squire)[]
-) {
+export function renderCard(characters: Character[]) {
+  list += `<ul class="characters-list row list-unstyled">`;
   characters.forEach((item) => {
-    list +=
-      '<ul class="characters-list row list-unstyled"><li class="character col"><div class="card character__card">';
+    list += '<li class="character col"><div class="card character__card">';
     list += `<img src="${item.name}.jpg" alt="Nombre y familia del personaje" class="character__picture card-img-top" />`;
     list += `<div class="card-body">`;
     list += `<h2 class="character__name card-title h4">${item.name} ${item.family}</h2>`;
@@ -37,7 +35,7 @@ export function renderCard(
     }
 
     if (item instanceof Squire) {
-      list += `<li>Sirve a: ${item.serves.name} ${item.serves.family}</li>`;
+      list += `<li>Sirve a: ${item.serves.name} ${item.serves.family}</li><li>Peloteo: ${item.servility}</li>`;
     }
 
     list += `</ul><div class="character__actions"><button class="character__action btn">habla</button><button class="character__action btn">muere</button></div></div></div>`;
@@ -58,7 +56,8 @@ export function renderCard(
       list += `<i class="emoji">🛡</i>`;
     }
 
-    list += `</div></li></ul></div>`;
+    list += `</div></li>`;
   });
-  parentElement.innerHTML = list;
+  list += `</ul>`;
+  return list;
 }
